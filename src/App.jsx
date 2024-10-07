@@ -13,6 +13,7 @@ import Home from "./components/Home";
 import WriteRecipe from "./components/WriteRecipe";
 import ViewRecipe from "./components/ViewRecipe";
 import Dashboard from "./components/Dashboard";
+import RecipeHighlightId from "./components/homeComponent/RecipeHighlightId";
 
 function App() {
   const [toggleNav, setToggleNav] = useState(false);
@@ -181,6 +182,7 @@ function App() {
             <Route path="/write_recipe_book" element={<WriteRecipe />} />
             <Route path="/View_recipe_book" element={<ViewRecipe />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/:id" element={<RecipeHighlightId />} />
           </Routes>
         </BrowserRouter>
       </div>

@@ -313,7 +313,7 @@ const WriteRecipe = () => {
                   </h2>
 
                   <button className="border   mt-4 md:mt-5 hover:border-yellow-500 border-pink-300 shadow-md shadow-yellow-100">
-                    <NavLink to="https://loyal-weevil-7.accounts.dev/sign-in?redirect_url=http%3A%2F%2Flocalhost%3A5175%2Fwrite_recipe_book">
+                    <NavLink to="https://loyal-weevil-7.accounts.dev/sign-in?redirect_url=http%3A%2F%2Flocalhost%3A5175%2F">
                       <div className="flex">
                         <div className="text-pink-500">Get Started </div>
                         <div className="pt-[2px]">

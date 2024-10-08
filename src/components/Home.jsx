@@ -1,10 +1,19 @@
 import { useUser } from "@clerk/clerk-react";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Contact } from "lucide-react";
 import { Link, NavLink } from "react-router-dom";
 import RecipeHighlight from "./homeComponent/RecipeHighlight";
+import MyCalendar from "./homeComponent/Calender";
+import { useState } from "react";
+import MyFullCalendar from "./homeComponent/FullCalender";
+import GoogleCalendar from "./homeComponent/GoogleCalender";
+import Contacts from "./homeComponent/Contact";
 
 const Home = () => {
   const { user } = useUser();
+  const [date, setDate] = useState("");
+  const handleDateChange = () => {
+    console.log(date);
+  };
   return (
     <div>
       <div className="  w-[100%] bg-gradient-to-b from-yellow-200 h-[100vh]">
@@ -67,6 +76,20 @@ const Home = () => {
         </div>
         <div className="flex mt-[24vh] justify-center">
           <RecipeHighlight />
+        </div>
+        <div>
+          <MyCalendar
+            onChange={handleDateChange}
+            value={date}
+            // tileDisabled={({ date }) =>
+            //   date.getDay() === 0 || date.getDay() === 6
+            // } // Disable weekends
+            tileContent={({ date, view }) =>
+              view === "month" && date.getDate() === 15 ? (
+                <p>Special Day</p>
+              ) : null
+            }
+          />
         </div>
       </div>
     </div>

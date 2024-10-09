@@ -49,14 +49,14 @@ const Home = () => {
                 ) : (
                   <>
                     <button className="border  border-red-300 shadow-md shadow-yellow-200">
-                      <Link to="https://loyal-weevil-7.accounts.dev/sign-in?redirect_url=http%3A%2F%2Flocalhost%3A5175%2F">
+                      <a href="">
                         <div className="flex">
                           <div>Get Started </div>
                           <div className="pt-[2px]">
                             <ChevronRight className="ml-1 border-none h-4 w-4" />
                           </div>
                         </div>
-                      </Link>
+                      </a>
                     </button>
                   </>
                 )}

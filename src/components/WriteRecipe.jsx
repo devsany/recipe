@@ -228,7 +228,7 @@ const WriteRecipe = () => {
                         name="ingredients"
                         placeholder="Ingredients *"
                         rows={8}
-                        cols={45}
+                        cols={40}
                         onChange={handleChange}
                         value={recipe.ingredients}
                       />
@@ -251,7 +251,7 @@ const WriteRecipe = () => {
                         name="instructions"
                         placeholder="Instructions *"
                         rows={8}
-                        cols={45}
+                        cols={40}
                         onChange={handleChange}
                       />
                     </div>
@@ -272,7 +272,7 @@ const WriteRecipe = () => {
                         name="notes"
                         placeholder="Additional Notes"
                         rows={8}
-                        cols={45}
+                        cols={40}
                         onChange={handleChange}
                         value={recipe.notes}
                       />

@@ -28,10 +28,10 @@ This fully responsive Recipe Book web application was developed as part of an in
 One of the primary challenges I encountered during the development of this recipe book web application was related to routing and **user-specific data management**.
 
 - Routing Challenges:
-- Initially, I struggled with implementing protected routes to ensure that only authenticated users could access specific sections like the "Add Recipe" page. I had to dive deep into React Router and Firebase authentication to manage these routes securely.
-- I learned how to properly set up protected routes by checking the user's authentication status before rendering certain components. This made sure that users who were not logged in couldn't access the recipe management features, while logged-in users had full access to their recipe database.
+  Initially, I struggled with implementing protected routes to ensure that only authenticated users could access specific sections like the "Add Recipe" page. I had to dive deep into React Router and Firebase authentication to manage these routes securely.
+  I learned how to properly set up protected routes by checking the user's authentication status before rendering certain components. This made sure that users who were not logged in couldn't access the recipe management features, while logged-in users had full access to their recipe database.
 - User-Specific Database:
-- Another challenge was configuring the Firebase database to store each user's recipes in a way that ensured separation between different users' data. This required a thorough understanding of Firebase's real-time database structure and how to create unique records for each authenticated user.
+  Another challenge was configuring the Firebase database to store each user's recipes in a way that ensured separation between different users' data. This required a thorough understanding of Firebase's real-time database structure and how to create unique records for each authenticated user.
 - I resolved this by using Firebase's authentication ID to create a separate node in the database for each user. This way, every logged-in user could manage their own recipes without affecting others' data. This approach also made retrieving and displaying user-specific data more efficient.
 
 # New Skills Learned:
@@ -39,9 +39,9 @@ One of the primary challenges I encountered during the development of this recip
 During the development of this recipe book web application, I gained valuable experience with several tools and technologies:
 
 - **Firebase for Real-Time Database:**
-- I learned how to leverage Firebase to manage real-time data, ensuring that any changes made by the user were instantly reflected in the app. This was particularly useful for handling user-specific recipes and enabling seamless data synchronization across devices.
+  I learned how to leverage Firebase to manage real-time data, ensuring that any changes made by the user were instantly reflected in the app. This was particularly useful for handling user-specific recipes and enabling seamless data synchronization across devices.
 - Firebase Authentication:
-- Implementing user authentication was another key learning. I used Firebase’s authentication service to manage user sign-ins and sign-outs, ensuring secure access to the app's features. This experience enhanced my understanding of user authentication flows and how to integrate them within a React app.
+  Implementing user authentication was another key learning. I used Firebase’s authentication service to manage user sign-ins and sign-outs, ensuring secure access to the app's features. This experience enhanced my understanding of user authentication flows and how to integrate them within a React app.
 - Clerk for Authentication:
   In addition to Firebase, I also explored Clerk, which helped me understand alternative authentication services and how to implement them for user management. Clerk offered a simple yet powerful way to manage user authentication and profiles.
 

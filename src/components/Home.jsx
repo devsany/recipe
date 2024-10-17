@@ -18,7 +18,7 @@ const Home = () => {
           <div className="flex justify-left items-center">
             <div className="ml-7 pt-10 md:ml-10 mr-10 items-center ">
               <h2 className="text-3xl pb-2 font-bold bg-gradient-to-r from-yellow-500 to-red-600 bg-clip-text text-transparent scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-                Furniture That Fits Your Life, Style, and Space
+                Give your health a good guide
               </h2>
 
               <div className="leading-7 font-thin   [&:not(:first-child)]:mt-6">
